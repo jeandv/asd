@@ -8,6 +8,9 @@ footer
   background-color: $white-1
   align-items: center
 
+  @media screen and (min-width: 1180px)
+    height: 100px
+
   .container
     width: 100%
     display: flex
@@ -16,6 +19,9 @@ footer
     align-items: center
     margin: 27px 20px 36px 20px
     gap: 20px
+
+    @media screen and (min-width: 1180px)
+      width: 1200px
 
     .imgContainer
       width: 100%
@@ -32,6 +38,19 @@ footer
         height: 30px
         filter: grayscale(1)
 
+      .infoContainerNoMobile
+        display: none
+
+        @media screen and (min-width: 1180px)
+          width: 100%
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: flex-start
+          gap: 8px
+          text-align: start
+          margin: 0 0 0 32px
+
     .infoContainer
       width: 100%
       display: flex
@@ -40,5 +59,9 @@ footer
       align-items: center
       text-align: center
 
-      p
-        font-size: 12px
+      @media screen and (min-width: 1180px)
+        display: none
+
+    p
+      font-size: 12px
+      font-weight: 400

@@ -16,6 +16,43 @@ header
     margin: 18px 20px 12px 20px
     width: 100%
 
+    @media screen and (min-width: 1180px)
+      width: 1200px
+
     .imgContainer>img
       width: 130px
       height: 50px
+
+    .navbar
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+      .navbarContainerLink, .navbarContainerRed
+        display: none
+        margin: 0 20px 0 0
+
+        @media screen and (min-width: 1180px)
+          display: flex
+          align-items: center
+          justify-content: center
+
+          ul
+            display: flex
+            align-items: center
+            justify-content: center
+
+            li
+              list-style: none
+
+          .navLinks
+            gap: 55px
+
+          .redesSociales
+            gap: 24px
+
+      .menuIcon
+        display: block
+
+        @media screen and (min-width: 1180px)
+          display: none

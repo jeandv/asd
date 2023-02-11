@@ -16,6 +16,11 @@
     margin: 100px auto 0 auto
     width: 100%
 
+    @media screen and (min-width: 1180px)
+      width: 900px
+      margin: 172px auto 70px auto
+      flex-direction: row
+
     .aboutInfo
       display: flex
       align-items: flex-start
@@ -26,11 +31,25 @@
       width: 100%
       margin: 0 20px
 
+      .titleAbout
+        margin: 0 40px
+
+        @media screen and (min-width: 1180px)
+          margin: 0
+
       div
         margin: 0 20px
 
+        @media screen and (min-width: 1180px)
+          margin: 0
+
         h1
           letter-spacing: 2.41px
+
+          @media screen and (min-width: 1180px)
+            margin: 30px 0
+            font-size: 32px
+            line-height: 44px
 
         ul
           display: flex
@@ -39,50 +58,82 @@
           flex-direction: column
           padding: 0
 
+          @media screen and (min-width: 1180px)
+            width: 260px
+
           li
             list-style: none
             font-weight: 400
 
-        strong
-          font-weight: 500
+      .ingredientesTabla
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
 
-        p
+        @media screen and (min-width: 1180px)
+          gap: 50px
+          flex-direction: row
+          justify-content: space-between
+
+        .infoIngredientes
+          display: flex
+          justify-content: center
+          flex-direction: column
+          align-items: flex-start
+          gap: 21px
+
+          @media screen and (min-width: 1180px)
+            gap: 44px
+
+          strong
+            font-weight: 500
+
+          p
+            font-weight: 300
+
+          @media screen and (min-width: 1180px)
+            line-height: 19px
+            font-size: 14px
+            width: 230px
+
+        .tableInfo
+          margin: 55px auto 28px auto
           font-weight: 300
+          font-size: 12px
+          color: $purple
 
-    .tableInfo
-      margin: 55px auto 28px auto
-      font-weight: 300
-      font-size: 12px
-      color: $purple
+          @media screen and (min-width: 1180px)
+            margin: 0
+            width: 492px
 
-      table
-        display: block
-        border-collapse: collapse
-        width: 100%
+          table
+            border-collapse: collapse
+            width: 100%
 
-        tr>td:first-child
-        text-align: end
+          tr
+            background-color: $bg-gray
 
-        tr
-          background-color: $bg-gray
+          td
+            padding: 10px 15px 10px 15px
 
-        td
-          padding: 10px 15px 10px 15px
+          td:first-child
+            text-align: end
 
-        .gray
-          background-color: $bg-gray-2
+          .gray
+            background-color: $bg-gray-2
 
-.fresa2
-  position: absolute
-  width: 115px
-  height: 132px
-  left: 316px
-  top: 890px
-  filter: blur(2.71828px)
+// .fresa2
+//   position: absolute
+//   width: 115px
+//   height: 132px
+//   left: 316px
+//   top: 890px
+//   filter: blur(2.71828px)
 
-.fresaAbout
-  position: absolute
-  width: 101px
-  height: 97px
-  left: -63px
-  top: 1116px
+// .fresaAbout
+//   position: absolute
+//   width: 101px
+//   height: 97px
+//   left: -63px
+//   top: 1116px

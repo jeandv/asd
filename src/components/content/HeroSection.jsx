@@ -4,14 +4,14 @@ import vitalineaProducto from "../../assets/vitalinea-producto.png";
 import federacionMexDiabetes from "../../assets/federacion-mexicana-diabetes.png";
 import menosKcal from "../../assets/menos-100kcal.png";
 import arrowIcon from "../../assets/arrow-icon.svg";
-import Fresa3 from "../../assets/fresa-3.png";
-import Fresa4 from "../../assets/fresa-4.png";
+// import Fresa3 from "../../assets/fresa-3.png";
+// import Fresa4 from "../../assets/fresa-4.png";
 
 export const HeroSection = () => {
   return (
     <section className="HeroContainer">
-      <img src={Fresa3} alt="Fresa Vitalínea" className="fresa3" />
-      <img src={Fresa4} alt="Fresa Vitalínea" className="fresa4" />
+      {/* <img src={Fresa3} alt="Fresa Vitalínea" className="fresa3" />
+      <img src={Fresa4} alt="Fresa Vitalínea" className="fresa4" /> */}
 
       <div className="container">
         <div className="imgProducto">
@@ -45,10 +45,9 @@ export const HeroSection = () => {
             <img src={menosKcal} alt="Menos de 100Kcal" />
           </div>
         </div>
-
-        <div className="arrowIcon">
-          <img src={arrowIcon} alt="Arrow Icon" />
-        </div>
+      </div>
+      <div className="arrowIcon">
+        <img src={arrowIcon} alt="Arrow Icon" />
       </div>
 
       {/* <div className="diagonalBox"></div> */}

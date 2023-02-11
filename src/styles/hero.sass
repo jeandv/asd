@@ -7,7 +7,6 @@
   flex-direction: column
   justify-content: center
   width: 100%
-  z-index: -10
 
   .container
     display: flex
@@ -17,10 +16,22 @@
     margin: 17px 20px 0 20px
     width: 100%
 
+    @media screen and (min-width: 1180px)
+      flex-direction: row
+      justify-content: center
+      gap: 130px
+      width: 1200px
+      margin: 58px auto 86px auto
+
     .imgProducto > img
       height: 243.13px
       transform: rotate(15deg)
       width: 90.45px
+      filter: drop-shadow(40px 102px 45px rgba(0, 0, 0, 0.10193))
+
+      @media screen and (min-width: 1180px)
+        height: 403px
+        width: 148px
 
     .aboutHero
       display: flex
@@ -29,6 +40,9 @@
       justify-content: center
       text-align: start
       width: 100%
+
+      @media screen and (min-width: 1180px)
+        width: 574px
 
       div
         margin: 0 20px
@@ -54,11 +68,19 @@
             border: solid 0.5px #00000014
             justify-content: space-between
             padding: 0 18px
+            cursor: pointer
             transition: all 300ms ease
 
             &:active, &:hover
               background-color: $red
               border: solid 0.5px transparent
+
+        @media screen and (min-width: 1180px)
+          margin: 25px 20px
+
+      .titleHero>h1
+        @media screen and (min-width: 1180px)
+          font-size: 40px
 
       .infoHero
         align-items: stretch
@@ -67,15 +89,24 @@
         justify-content: center
 
         p
-          margin: 10px 0
+          margin: 10px auto
+
+          @media screen and (min-width: 1180px)
+            margin: 30px auto
+            font-size: 17px
 
         button
           background-color: $purple
+          width: 100%
           height: 40px
           transition: all 300ms ease
+          cursor: pointer
 
           &:hover
             background-color: #57194f
+
+          @media screen and (min-width: 1180px)
+            width: 243px
 
       .imgInfoHero
         display: flex
@@ -92,20 +123,23 @@
           width: 86px
           height: 62px
 
-.fresa3
-  height: 186px
-  position: absolute
-  left: -59px
-  top: 70px
-  width: 117px
+        @media screen and (min-width: 1180px)
+          margin: 33px 0 0 20px
 
-.fresa4
-  filter: blur(13.5914px)
-  height: 243px
-  position: absolute
-  left: 230px
-  top: -50px
-  width: 251px
+// .fresa3
+//   height: 186px
+//   position: absolute
+//   left: -59px
+//   top: 70px
+//   width: 117px
+
+// .fresa4
+//   filter: blur(13.5914px)
+//   height: 243px
+//   position: absolute
+//   left: 230px
+//   top: -50px
+//   width: 251px
 
 // .diagonalBox
 //   background-color: $white-1

@@ -13,34 +13,47 @@ export const Header = () => {
         <div className="imgContainer">
           <img src={vitalineaLogo} alt="Vitalínea Logo" />
         </div>
+
         <nav className="navbar">
           <div className="navbarContainerLink">
-            <ul>
+            <ul className="navLinks">
               <li>
                 <a href="#">Nuevos productos</a>
               </li>
+
               <li>
                 <a href="#">Disfruta cuidarte</a>
               </li>
+
               <li>
                 <a href="#">Blog</a>
               </li>
             </ul>
           </div>
+
           <div className="navbarContainerRed">
-            <ul>
+            <ul className="redesSociales">
               <li>
-                <img src={facebookLogo} alt="Facebook Vitalínea Logo" />
+                <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                  <img src={facebookLogo} alt="Facebook Vitalínea Logo" />
+                </a>
               </li>
+
               <li>
-                <img src={instagramLogo} alt="Instagram Vitalínea Logo" />
+                <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                  <img src={instagramLogo} alt="Instagram Vitalínea Logo" />
+                </a>
               </li>
+
               <li>
-                <img src={youtubeLogo} alt="Youtube Vitalínea Logo" />
+                <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                  <img src={youtubeLogo} alt="Youtube Vitalínea Logo" />
+                </a>
               </li>
             </ul>
           </div>
-          <div>
+
+          <div className="menuIcon">
             <img src={menuIcon} alt="Menu Icon" />
           </div>
         </nav>
