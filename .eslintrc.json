@@ -22,9 +22,11 @@
             "error",
             {
                 "singleQuote": false,
+                "endOfLine": "auto",
                 "parser": "flow"
             }
         ],
+        "react/prop-types": "off",
         "arrow-body-style": "off",
         "prefer-arrow-callback": "off"
     }

@@ -1,0 +1,88 @@
+@import 'globals.sass'
+
+.AboutContainer
+  display: flex
+  align-items: center
+  background: $white-1
+  flex-direction: column
+  justify-content: center
+  width: 100%
+
+  .container
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    margin: 100px auto 0 auto
+    width: 100%
+
+    .aboutInfo
+      display: flex
+      align-items: flex-start
+      flex-direction: column
+      justify-content: center
+      text-align: start
+      gap: 18px
+      width: 100%
+      margin: 0 20px
+
+      div
+        margin: 0 20px
+
+        h1
+          letter-spacing: 2.41px
+
+        ul
+          display: flex
+          justify-content: center
+          align-items: flex-start
+          flex-direction: column
+          padding: 0
+
+          li
+            list-style: none
+            font-weight: 400
+
+        strong
+          font-weight: 500
+
+        p
+          font-weight: 300
+
+    .tableInfo
+      margin: 55px auto 28px auto
+      font-weight: 300
+      font-size: 12px
+      color: $purple
+
+      table
+        display: block
+        border-collapse: collapse
+        width: 100%
+
+        tr>td:first-child
+        text-align: end
+
+        tr
+          background-color: $bg-gray
+
+        td
+          padding: 10px 15px 10px 15px
+
+        .gray
+          background-color: $bg-gray-2
+
+.fresa2
+  position: absolute
+  width: 115px
+  height: 132px
+  left: 316px
+  top: 890px
+  filter: blur(2.71828px)
+
+.fresaAbout
+  position: absolute
+  width: 101px
+  height: 97px
+  left: -63px
+  top: 1116px

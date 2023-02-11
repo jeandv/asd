@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Red+Hat+Display:wght@300;400;500;700&display=swap')
+
+$white-1: #FFFFFF
+$white-2: #F2F2F2
+$white-trans: #ffffffac
+$bg-gray: #FAFAFA
+$bg-gray-2: #F8F8F8
+$purple: #78246D
+$red: #ff00001b
+$rose-1: #F9E6E6
+$rose-2: #EBACAC
+$black: #000
+
+::selection
+  background-color: $purple
+  color: $white-1
+
+html
+  min-width: 360px
+  scroll-behavior: smooth
+
+body
+  // overflow-x: hidden
+  font-family: 'Open Sans', sans-serif
+  font-family: 'Red Hat Display', sans-serif
+  margin: 0
+  min-width: 360px
+  padding: 0
+  transition: all 300ms
+
+h1
+  color: $purple
+  font-size: 20px
+  font-weight: 300
+  line-height: 27px
+  margin: 0
+
+h2
+  color: $purple
+  font-size: 11px
+  font-weight: 300
+  line-height: 27px
+  margin: 0
+
+h3,h4,h5,h6
+  margin: 0
+
+p
+  color: $black
+  font-size: 14px
+  font-weight: 400
+  line-height: 19px
+  margin: 0
+
+a,a:link, a:visited, a:active
+  color: $black
+  font-size: 16px
+  font-weight: 500
+  line-height: 22px
+  text-decoration: none
+
+button
+  border: none
+  color: $white-1
+  font-size: 14px
+  font-weight: 500
+  line-height: 19px
+  text-align: center
+
+table, tr, td
+  border: none
+
+main
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+.navbarContainerLink, .navbarContainerRed
+  display: none

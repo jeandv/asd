@@ -1,0 +1,34 @@
+import React from "react";
+import "../../styles/products.sass";
+import vitalineaGriego from "../../assets/vitalinea-griego.png";
+import vitalineaAzucar from "../../assets/vitalinea-sin-azucar.png";
+import vitalineaBebible from "../../assets/vitalinea-bebible.png";
+
+export const ProductsSection = () => {
+  return (
+    <section className="productsContainer">
+      <div className="container">
+        <div className="productsTitle">
+          <h1>LA FAMILIA VITALÍNEA</h1>
+        </div>
+
+        <div className="productsVitalinea">
+          <div>
+            <img src={vitalineaGriego} alt="Vitalínea Griego" className="vitalineaGriego" />
+            <h2>Vitalínea Griego</h2>
+          </div>
+
+          <div>
+            <img src={vitalineaAzucar} alt="Vitalínea sin Azúcar" className="vitalineaAzucar" />
+            <h2>Vitalínea sin Azúcar</h2>
+          </div>
+
+          <div>
+            <img src={vitalineaBebible} alt="Vitalínea Bebible" className="vitalineaBebible" />
+            <h2>Vitalínea Bebible</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

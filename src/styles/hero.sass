@@ -1,0 +1,118 @@
+@import 'globals.sass'
+
+.HeroContainer
+  display: flex
+  align-items: center
+  background: linear-gradient(180deg, $rose-1 0%, $rose-2 100%)
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  z-index: -10
+
+  .container
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: space-between
+    margin: 17px 20px 0 20px
+    width: 100%
+
+    .imgProducto > img
+      height: 243.13px
+      transform: rotate(15deg)
+      width: 90.45px
+
+    .aboutHero
+      display: flex
+      align-items: flex-start
+      flex-direction: column
+      justify-content: center
+      text-align: start
+      width: 100%
+
+      div
+        margin: 0 20px
+
+      .saboresHero
+        display: flex
+        align-items: center
+        font-size: 14px
+        font-weight: 500
+        justify-content: space-between
+        margin: 27.75px 20px 19px 20px
+
+        div
+          display: flex
+          gap: 10px
+          justify-content: center
+
+          span
+            display: flex
+            align-items: center
+            background-color: transparent
+            border-radius: 11.5px
+            border: solid 0.5px #00000014
+            justify-content: space-between
+            padding: 0 18px
+            transition: all 300ms ease
+
+            &:active, &:hover
+              background-color: $red
+              border: solid 0.5px transparent
+
+      .infoHero
+        align-items: stretch
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        p
+          margin: 10px 0
+
+        button
+          background-color: $purple
+          height: 40px
+          transition: all 300ms ease
+
+          &:hover
+            background-color: #57194f
+
+      .imgInfoHero
+        display: flex
+        align-items: center
+        gap: 26px
+        justify-content: center
+        margin: 36px auto 21px auto
+
+        img:first-child
+          width: 62px
+          height: 62px
+
+        img:last-child
+          width: 86px
+          height: 62px
+
+.fresa3
+  height: 186px
+  position: absolute
+  left: -59px
+  top: 70px
+  width: 117px
+
+.fresa4
+  filter: blur(13.5914px)
+  height: 243px
+  position: absolute
+  left: 230px
+  top: -50px
+  width: 251px
+
+// .diagonalBox
+//   background-color: $white-1
+//   width: 100vw
+//   height: 70px
+//   position: absolute
+//   bottom: -20%
+//   transform: skewY(6deg)
+//   width: 100%
+//   z-index: -1
