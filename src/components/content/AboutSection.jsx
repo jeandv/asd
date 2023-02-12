@@ -1,14 +1,9 @@
 import React from "react";
 import "../../styles/about.sass";
-// import Fresa2 from "../../assets/fresa-2.png";
-// import Fresa4 from "../../assets/fresa-4.png";
 
 export const AboutSection = () => {
   return (
     <section className="AboutContainer">
-      {/* <img src={Fresa2} alt="Fresa Vitalínea" className="fresa2" />
-      <img src={Fresa4} alt="Fresa Vitalínea" className="fresaAbout" /> */}
-
       <article className="container">
         <div className="aboutInfo">
           <div className="titleAbout">
@@ -33,50 +28,52 @@ export const AboutSection = () => {
 
             <div className="tableInfo">
               <table>
-                <tr>
-                  <td>Contenido energético kJ/kcal</td>
-                  <td>413,2/97,9</td>
-                </tr>
-                <tr className="gray">
-                  <td>Proteínas (g)</td>
-                  <td>5.3</td>
-                </tr>
-                <tr>
-                  <td>Grasas (lípidos) (g)</td>
-                  <td>2.1</td>
-                </tr>
-                <tr className="gray">
-                  <td>Grasas saturadas (g)</td>
-                  <td>1.4</td>
-                </tr>
-                <tr>
-                  <td>Carbohidratos (Hidratos de carbono) (g)</td>
-                  <td>12.4</td>
-                </tr>
-                <tr className="gray">
-                  <td>Azúcares (g)</td>
-                  <td>7.7</td>
-                </tr>
-                <tr>
-                  <td>Azúcares añadidos (g)</td>
-                  <td>0.1</td>
-                </tr>
-                <tr className="gray">
-                  <td>Fibra dietética (g)</td>
-                  <td>0.0</td>
-                </tr>
-                <tr>
-                  <td>Sodio (mg)</td>
-                  <td>92.7</td>
-                </tr>
-                <tr className="gray">
-                  <td>Calcio (mg)</td>
-                  <td>199.6</td>
-                </tr>
-                <tr>
-                  <td>%VNR*</td>
-                  <td>22</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>Contenido energético kJ/kcal</td>
+                    <td>413,2/97,9</td>
+                  </tr>
+                  <tr className="gray">
+                    <td>Proteínas (g)</td>
+                    <td>5.3</td>
+                  </tr>
+                  <tr>
+                    <td>Grasas (lípidos) (g)</td>
+                    <td>2.1</td>
+                  </tr>
+                  <tr className="gray">
+                    <td>Grasas saturadas (g)</td>
+                    <td>1.4</td>
+                  </tr>
+                  <tr>
+                    <td>Carbohidratos (Hidratos de carbono) (g)</td>
+                    <td>12.4</td>
+                  </tr>
+                  <tr className="gray">
+                    <td>Azúcares (g)</td>
+                    <td>7.7</td>
+                  </tr>
+                  <tr>
+                    <td>Azúcares añadidos (g)</td>
+                    <td>0.1</td>
+                  </tr>
+                  <tr className="gray">
+                    <td>Fibra dietética (g)</td>
+                    <td>0.0</td>
+                  </tr>
+                  <tr>
+                    <td>Sodio (mg)</td>
+                    <td>92.7</td>
+                  </tr>
+                  <tr className="gray">
+                    <td>Calcio (mg)</td>
+                    <td>199.6</td>
+                  </tr>
+                  <tr>
+                    <td>%VNR*</td>
+                    <td>22</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

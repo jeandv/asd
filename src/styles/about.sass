@@ -18,7 +18,7 @@
 
     @media screen and (min-width: 1180px)
       width: 900px
-      margin: 172px auto 70px auto
+      margin: 100px auto 70px auto
       flex-direction: row
 
     .aboutInfo
@@ -47,7 +47,7 @@
           letter-spacing: 2.41px
 
           @media screen and (min-width: 1180px)
-            margin: 30px 0
+            margin: 0 0 35px 0
             font-size: 32px
             line-height: 44px
 
@@ -82,6 +82,7 @@
           flex-direction: column
           align-items: flex-start
           gap: 21px
+          z-index: 100
 
           @media screen and (min-width: 1180px)
             gap: 44px
@@ -111,29 +112,14 @@
             border-collapse: collapse
             width: 100%
 
-          tr
-            background-color: $bg-gray
+            tr
+              background-color: $bg-gray
 
-          td
-            padding: 10px 15px 10px 15px
+            td
+              padding: 10px 15px 10px 15px
 
-          td:first-child
-            text-align: end
+            td:first-child
+              text-align: end
 
-          .gray
-            background-color: $bg-gray-2
-
-// .fresa2
-//   position: absolute
-//   width: 115px
-//   height: 132px
-//   left: 316px
-//   top: 890px
-//   filter: blur(2.71828px)
-
-// .fresaAbout
-//   position: absolute
-//   width: 101px
-//   height: 97px
-//   left: -63px
-//   top: 1116px
+            .gray
+              background-color: $bg-gray-2

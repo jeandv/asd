@@ -38,16 +38,24 @@
       width: 100%
       margin: 60px auto 0 auto
       gap: 20px
+      scroll-snap-type: mandatory
+      scroll-snap-align: center
+      overflow-x: scroll
 
       @media screen and (min-width: 1180px)
         gap: 138px
+        overflow: hidden
 
       div
         display: flex
         align-items: center
         flex-direction: column
         justify-content: flex-end
-        height: 230px
+        height: 100%
+        scroll-snap-stop: always
+
+        @media screen and (min-width: 1180px)
+          overflow: hidden
 
         .vitalineaGriego
           height: 106px

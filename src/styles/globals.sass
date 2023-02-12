@@ -18,9 +18,11 @@ $black: #000
 html
   min-width: 320px
   scroll-behavior: smooth
+  overflow-x: hidden
 
 body
-  // overflow-x: hidden
+  box-sizing: content-box
+  overflow-x: hidden
   font-family: 'Open Sans', sans-serif
   font-family: 'Red Hat Display', sans-serif
   margin: 0
@@ -63,7 +65,7 @@ button
   border: none
   color: $white-1
   font-size: 14px
-  font-weight: 500
+  font-weight: 400
   line-height: 19px
   text-align: center
 
@@ -76,3 +78,113 @@ main
   flex-direction: column
   justify-content: center
   margin: 0 auto
+
+.fresaHeader1
+  position: absolute
+  width: 117px
+  height: 186px
+  left: -59px
+  top: 157px
+  filter: drop-shadow(0px 62px 34px rgba(0, 0, 0, 0.0636606))
+
+.fresaHeader2
+  position: absolute
+  width: 251px
+  height: 243px
+  left: 33%
+  top: -85px
+  filter: blur(13.5914px)
+
+.fresaAbout2
+  position: absolute
+  width: 115px
+  height: 132px
+  left: 63%
+  top: 955px
+  filter: blur(2.71828px) drop-shadow(0px 62px 34px rgba(0, 0, 0, 0.0636606))
+
+.fresaAbout3
+  position: absolute
+  width: 101px
+  height: 97px
+  left: -63px
+  top: 1214px
+  filter: drop-shadow(0px 62px 34px rgba(0, 0, 0, 0.0636606))
+
+.fresaHero1, .fresaHero2, .fresaAbout1, .fresaProducts1, .fresaProducts2
+  display: none
+
+@media screen and (min-width: 1180px)
+
+  .fresaHeader1
+    position: absolute
+    width: 117px
+    height: 186px
+    left: 15%
+    top: -73px
+    filter: drop-shadow(0px 62px 34px rgba(0, 0, 0, 0.0636606))
+
+  .fresaHeader2
+    position: absolute
+    width: 471px
+    height: 455px
+    left: 45%
+    top: -278px
+    filter: blur(13.5914px)
+
+  .fresaHero1
+    position: absolute
+    width: 139px
+    height: 175px
+    left: 80%
+    top: 549px
+    filter: drop-shadow(0px 62px 34px rgba(0, 0, 0, 0.0636606))
+
+  .fresaHero2
+    position: absolute
+    width: 317px
+    height: 403px
+    left: -13%
+    top: 503px
+    filter: blur(6.7957px)
+
+  .fresaAbout1
+    position: absolute
+    width: 117px
+    height: 186px
+    left: 6%
+    top: 921px
+    filter: drop-shadow(0px 62px 34px rgba(0, 0, 0, 0.0636606))
+    transform: rotate(46deg)
+
+  .fresaAbout2
+    position: absolute
+    width: 187px
+    height: 216px
+    left: 93%
+    top: 899px
+    filter: blur(2.71828px) drop-shadow(0px 62px 34px rgba(0, 0, 0, 0.0636606))
+
+  .fresaAbout3
+    position: absolute
+    width: 181px
+    height: 175px
+    left: -4%
+    top: 1307px
+    filter: drop-shadow(0px 62px 34px rgba(0, 0, 0, 0.0636606))
+
+  .fresaProducts1
+    position: absolute
+    width: 139px
+    height: 175px
+    left: 17%
+    top: 1393px
+    filter: drop-shadow(0px 62px 34px rgba(0, 0, 0, 0.0636606))
+
+  .fresaProducts2
+    position: absolute
+    width: 317px
+    height: 403px
+    left: 87%
+    top: 1290px
+    filter: blur(6.7957px)

@@ -4,15 +4,10 @@ import vitalineaProducto from "../../assets/vitalinea-producto.png";
 import federacionMexDiabetes from "../../assets/federacion-mexicana-diabetes.png";
 import menosKcal from "../../assets/menos-100kcal.png";
 import arrowIcon from "../../assets/arrow-icon.svg";
-// import Fresa3 from "../../assets/fresa-3.png";
-// import Fresa4 from "../../assets/fresa-4.png";
 
 export const HeroSection = () => {
   return (
-    <section className="HeroContainer">
-      {/* <img src={Fresa3} alt="Fresa Vitalínea" className="fresa3" />
-      <img src={Fresa4} alt="Fresa Vitalínea" className="fresa4" /> */}
-
+    <section className="heroContainer">
       <div className="container">
         <div className="imgProducto">
           <img src={vitalineaProducto} alt="Vitalínea® Bebible Fresa 217 gr." />
@@ -46,11 +41,10 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
+
       <div className="arrowIcon">
         <img src={arrowIcon} alt="Arrow Icon" />
       </div>
-
-      {/* <div className="diagonalBox"></div> */}
     </section>
   );
 };

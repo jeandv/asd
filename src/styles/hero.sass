@@ -1,9 +1,13 @@
 @import 'globals.sass'
 
-.HeroContainer
+.heroContainer
   display: flex
   align-items: center
-  background: linear-gradient(180deg, $rose-1 0%, $rose-2 100%)
+  background-color: $white-1
+  background-image: url('../assets/background-hero.svg')
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: cover
   flex-direction: column
   justify-content: center
   width: 100%
@@ -13,15 +17,15 @@
     align-items: center
     flex-direction: column
     justify-content: space-between
-    margin: 17px 20px 0 20px
+    margin: 17px 20px 70px 20px
     width: 100%
 
     @media screen and (min-width: 1180px)
       flex-direction: row
       justify-content: center
       gap: 130px
-      width: 1200px
-      margin: 58px auto 86px auto
+      width: 100%
+      margin: 58px auto 165px auto
 
     .imgProducto > img
       height: 243.13px
@@ -51,7 +55,7 @@
         display: flex
         align-items: center
         font-size: 14px
-        font-weight: 500
+        font-weight: 400
         justify-content: space-between
         margin: 27.75px 20px 19px 20px
 
@@ -90,6 +94,8 @@
 
         p
           margin: 10px auto
+          font-weight: 300
+          color: $black
 
           @media screen and (min-width: 1180px)
             margin: 30px auto
@@ -99,6 +105,7 @@
           background-color: $purple
           width: 100%
           height: 40px
+          font-weight: 400
           transition: all 300ms ease
           cursor: pointer
 
@@ -126,27 +133,6 @@
         @media screen and (min-width: 1180px)
           margin: 33px 0 0 20px
 
-// .fresa3
-//   height: 186px
-//   position: absolute
-//   left: -59px
-//   top: 70px
-//   width: 117px
-
-// .fresa4
-//   filter: blur(13.5914px)
-//   height: 243px
-//   position: absolute
-//   left: 230px
-//   top: -50px
-//   width: 251px
-
-// .diagonalBox
-//   background-color: $white-1
-//   width: 100vw
-//   height: 70px
-//   position: absolute
-//   bottom: -20%
-//   transform: skewY(6deg)
-//   width: 100%
-//   z-index: -1
+  .arrowIcon
+    position: relative
+    bottom: 80px
