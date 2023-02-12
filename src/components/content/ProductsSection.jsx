@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimationContainer } from "../utils/AnimationContainer";
+import { AnimationContainer } from "../utils";
 import "../../styles/products.sass";
 import vitalineaGriego from "../../assets/vitalinea-griego.png";
 import vitalineaAzucar from "../../assets/vitalinea-sin-azucar.png";

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AnimationContainer } from "../utils/AnimationContainer";
+import { AnimationContainer } from "../utils";
 import "../../styles/header.sass";
 import vitalineaLogo from "../../assets/vitalinea-logo.png";
 import facebookLogo from "../../assets/facebook-logo.svg";
@@ -56,9 +56,9 @@ export const Header = () => {
             </ul>
           </AnimationContainer>
 
-          <AnimationContainer customClassName="menuIcon" onClick={() => setIsOpen(!isOpen)}>
+          <div className="menuIcon" onClick={() => setIsOpen(!isOpen)}>
             <img src={menuIcon} alt="Menu Icon" />
-          </AnimationContainer>
+          </div>
         </nav>
       </div>
 

@@ -1,8 +1,6 @@
 import React from "react";
 import { Layout } from "./components/layout";
-import { HeroSection } from "./components/content/HeroSection";
-import { AboutSection } from "./components/content/AboutSection";
-import { ProductsSection } from "./components/content/ProductsSection";
+import { HeroSection, AboutSection, ProductsSection } from "./components/content";
 import Fresa1 from "./assets/fresa-1.png";
 import Fresa2 from "./assets/fresa-2.png";
 import Fresa3 from "./assets/fresa-3.png";
