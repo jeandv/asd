@@ -1,12 +1,21 @@
 🅰 IA-INTERACTIVE | PRUEBA FRONTEND 🅰
 
+Repositorio: https://github.com/jeandv/ia-interactive-prueba
+
+- Información del postulante: 
+
+Nombre: Jean Rondón - @jeandv
+Portafolio: https://jeandv.vercel.app
+LinkedIn: https://linkedin.com/in/jeandv
+Github: https://github.com/jeandv
+
 Tiempo total usado para hacer la prueba: 5 HORAS
 
-Nota: archivo ya listo para producción.
+Nota: archivo ya listo para producción, si desea verlo vaya a https://jeandv-ia-interactive-test.vercel.app
 
-Para ejecutar el proyecto instalelo o clonalo y instala sus paquetes con "yarn" luego escribe en la consola apuntando a su directoria donde se encuentra: "yarn dev"
+Para ejecutar el proyecto desde su pc de manera local instalelo o clonalo y instala sus paquetes con "yarn" luego escribe en la consola apuntando a su directoria donde se encuentra: "yarn dev"
 
-Requerimientos:
+Requerimientos de la prueba:
 
 - Utilizar React como framework de javascript. ✔
 
@@ -26,10 +35,3 @@ Requerimientos:
 entregable. ✔ 5 HORAS
 
 - Bonus: Implementar transiciones en los elementos gráficos al hacer scroll. ✔
-
-- Información del postulante: 
-
-Nombre: Jean Rondón - @jeandv
-Portafolio: https://jeandv.vercel.app
-LinkedIn: https://linkedin.com/in/jeandv
-Github: https://github.com/jeandv
