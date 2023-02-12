@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimationContainer } from "../utils/AnimationContainer";
 import "../../styles/hero.sass";
 import vitalineaProducto from "../../assets/vitalinea-producto.png";
 import federacionMexDiabetes from "../../assets/federacion-mexicana-diabetes.png";
@@ -9,42 +10,42 @@ export const HeroSection = () => {
   return (
     <section className="heroContainer">
       <div className="container">
-        <div className="imgProducto">
+        <AnimationContainer customClassName="imgProducto" customDelay={0.4}>
           <img src={vitalineaProducto} alt="Vitalínea® Bebible Fresa 217 gr." />
-        </div>
+        </AnimationContainer>
 
         <div className="aboutHero">
-          <div className="saboresHero">
+          <AnimationContainer customClassName="saboresHero" customDelay={0.5}>
             <span>Sabor:</span>
             <div>
               <span>Fresa</span>
               <span>Guayaba</span>
               <span>Toronja</span>
             </div>
-          </div>
+          </AnimationContainer>
 
-          <div className="titleHero">
+          <AnimationContainer customClassName="titleHero" customDelay={0.6}>
             <h1>Vitalínea® Bebible Fresa 217 gr.</h1>
-          </div>
+          </AnimationContainer>
 
-          <div className="infoHero">
+          <AnimationContainer customClassName="infoHero" customDelay={0.7}>
             <p>
               ¡La presentación ideal para llevar contigo! Vitalínea bebible es la opción si eres de
               las personas que siempre están activas y quieren probar algo sano, rico y práctico.
             </p>
             <button>Comprar en Walmart</button>
-          </div>
+          </AnimationContainer>
 
-          <div className="imgInfoHero">
+          <AnimationContainer customClassName="imgInfoHero" customDelay={0.7}>
             <img src={federacionMexDiabetes} alt="Federación Mexicana de Diabetes A.C." />
             <img src={menosKcal} alt="Menos de 100Kcal" />
-          </div>
+          </AnimationContainer>
         </div>
       </div>
 
-      <div className="arrowIcon">
+      <AnimationContainer customClassName="arrowIcon" customDelay={0.7}>
         <img src={arrowIcon} alt="Arrow Icon" />
-      </div>
+      </AnimationContainer>
     </section>
   );
 };

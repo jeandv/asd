@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimationContainer } from "../utils/AnimationContainer";
 import "../../styles/about.sass";
 
 export const AboutSection = () => {
@@ -6,12 +7,12 @@ export const AboutSection = () => {
     <section className="AboutContainer">
       <article className="container">
         <div className="aboutInfo">
-          <div className="titleAbout">
+          <AnimationContainer customClassName="titleAbout">
             <h1>Información nutrimental</h1>
-          </div>
+          </AnimationContainer>
 
           <div className="ingredientesTabla">
-            <div className="infoIngredientes">
+            <AnimationContainer customClassName="infoIngredientes" customDelay={0.4}>
               <ul>
                 <li>Vitalínea® Bebible Guayaba 217gr</li>
                 <li>Valor promedio por porción de 217gr</li>
@@ -24,9 +25,9 @@ export const AboutSection = () => {
                 sucralosa (27.2mg/100g)), crema, almidón modificado, maltodextrina y cultivos
                 lácticos.
               </p>
-            </div>
+            </AnimationContainer>
 
-            <div className="tableInfo">
+            <AnimationContainer customClassName="tableInfo" customDelay={0.6}>
               <table>
                 <tbody>
                   <tr>
@@ -75,7 +76,7 @@ export const AboutSection = () => {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </AnimationContainer>
           </div>
         </div>
       </article>

@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimationContainer } from "../utils/AnimationContainer";
 import "../../styles/products.sass";
 import vitalineaGriego from "../../assets/vitalinea-griego.png";
 import vitalineaAzucar from "../../assets/vitalinea-sin-azucar.png";
@@ -8,25 +9,25 @@ export const ProductsSection = () => {
   return (
     <section className="productsContainer">
       <div className="container">
-        <div className="productsTitle">
+        <AnimationContainer customClassName="productsTitle" customDelay={0.4}>
           <h1>LA FAMILIA VITALÍNEA</h1>
-        </div>
+        </AnimationContainer>
 
         <div className="productsVitalinea">
-          <div>
+          <AnimationContainer customDelay={0.4}>
             <img src={vitalineaGriego} alt="Vitalínea Griego" className="vitalineaGriego" />
             <h2>Vitalínea Griego</h2>
-          </div>
+          </AnimationContainer>
 
-          <div>
+          <AnimationContainer customDelay={0.5}>
             <img src={vitalineaAzucar} alt="Vitalínea sin Azúcar" className="vitalineaAzucar" />
             <h2>Vitalínea sin Azúcar</h2>
-          </div>
+          </AnimationContainer>
 
-          <div>
+          <AnimationContainer customDelay={0.6}>
             <img src={vitalineaBebible} alt="Vitalínea Bebible" className="vitalineaBebible" />
             <h2>Vitalínea Bebible</h2>
-          </div>
+          </AnimationContainer>
         </div>
       </div>
     </section>

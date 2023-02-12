@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimationContainer } from "../utils/AnimationContainer";
 import "../../styles/footer.sass";
 import danone from "../../assets/danone.png";
 import vitalineaLogo from "../../assets/vitalinea-logo.png";
@@ -11,25 +12,25 @@ export const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div className="imgContainer">
+        <AnimationContainer customClassName="imgContainer">
           <img src={danone} alt="Danone" className="danone" />
 
-          <div className="infoContainerNoMobile">
+          <AnimationContainer customClassName="infoContainerNoMobile">
             <p>Términos y condiciones | Políticas de privacidad | Aviso de privacidad</p>
             <p>
               Danone de México {year} ©. Todos los derechos reservados {year}
             </p>
-          </div>
+          </AnimationContainer>
 
           <img src={vitalineaLogo} alt="Vitalinea Logo" className="vitalineaLogo" />
-        </div>
+        </AnimationContainer>
 
-        <div className="infoContainer">
+        <AnimationContainer customClassName="infoContainer">
           <p>Términos y condiciones | Políticas de privacidad | Aviso de privacidad</p>
           <p>
             Danone de México {year} ©. Todos los derechos reservados {year}
           </p>
-        </div>
+        </AnimationContainer>
       </div>
     </footer>
   );
